@@ -40,8 +40,7 @@ knitr::write_bib(c(
 
 Kagumba is a great family located in Western Kenya, Kisumu County, Nyando Sub-County, East Kano Location, Katolo Sub-Location, Yogo Village. The family has a long history which I will keep updating from time to time. However, at the moment, I am delighted to create family tree and will give more information later as a weekly update. Keep checking back. 
 
-
-```{r}
+```{r mining, fig.height=9, fig.width=9, fig.align='center'}
 kagumba_links <- read.csv('kag.csv')
 kagumba_links$value <- 1
 
@@ -60,11 +59,10 @@ sankeyNetwork(Links = kagumba_links, Nodes = kagumba_nodes,
 
 If I reduce the number of rows in the data set, then the plot renders well. Here I pick only 40 rows out of the total 91.
 
-
 ```{r}
 kagumba_links <- read.csv('kag.csv')
 kagumba_links$value <- 1
-kagumba_links <- head(kagumba_links, 40)
+kagumba_links <- head(kagumba_links, 102)
 
 kagumba_nodes <- data.frame(name = c(as.character(kagumba_links$source),
                                               as.character(kagumba_links$target)) %>% unique())
