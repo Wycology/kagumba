@@ -77,7 +77,7 @@ sankeyNetwork(Links = kagumba_links, Nodes = kagumba_nodes,
               sinksRight=FALSE, colourScale = ColourScal, nodeWidth = 50, fontSize = 24, nodePadding = 20)
 ```
 
-Now, my question is, is there a way I can render all the 91 rows to plot as well as the 40 rows within Rmark?
+Now, my question is, is there a way I can render all the 91 rows to plot as well as the 40 rows within Rmarkdown?
 
 # References
 
